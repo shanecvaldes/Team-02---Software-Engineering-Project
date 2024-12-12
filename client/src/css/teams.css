@@ -1,0 +1,130 @@
+.collapse-animation {
+    transition: max-height 2s ease, opacity 2s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.collapse-animation.expanded {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.collapse-animation.collapsed {
+    max-height: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+.teams-container {
+    justify-content: center;
+    width: 50%;
+}
+
+
+/* SPINNER START */
+.spinner {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #333;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* SPINNER END */
+
+/* Grayed-out background */
+.addNewPopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Make sure it's on top of other content */
+}
+
+/* Modal content box */
+.addNewContainer {
+    position: relative;
+    /* background: white; */
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    /* Ensure it's above the overlay */
+}
+
+#root {
+    width: 80%;
+}
+
+.selected-team {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* MEMBER LIST START */
+
+.team-member-list {
+    list-style-type: none;
+}
+
+.team-member {
+    border: 1px solid white;
+}
+
+.team-member:hover {
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+
+/* MEMBER LIST END */
+
+/* MEMBER POPUP START */
+
+.addNewContainer {
+    color:black;
+
+}
+
+.new-user {
+    color:black;
+}
+
+.new-user-list {
+    color: black;
+}
+
+.form-container {
+    justify-content: center;
+}

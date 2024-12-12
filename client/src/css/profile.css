@@ -1,0 +1,43 @@
+.box {
+    margin-left: 5vw;
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #262626;
+    border-radius: 10px;
+    max-height: 370px;
+    min-width: 530px;
+}
+
+.info {
+    max-width: 400px;
+}
+
+.grid-item {
+    padding: 7px;
+    padding-left: 20px;
+}
+
+.pic {
+    border-radius: 10px;
+    max-width: 160px;
+    padding: 7px;
+}
+
+.items {
+    float: right;
+    padding: 7px;
+}
+
+.profilePic {
+    all: revert;
+    width: 80px;
+    height: 80px;
+    padding-right: 20px;
+}
+
+.btnPic {
+    width: 80px;
+    font-size: 9px;
+    padding: 0000;
+    margin-top: 7px;
+}

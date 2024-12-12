@@ -1,0 +1,155 @@
+.home-container {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #4f4f4f;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-section {
+    height: auto;
+    width: auto;
+}
+
+.upcoming-meetings {
+    height: 150px;
+    height: auto;
+}
+
+.recent-recordings {
+    grid-column: span 3;
+    height: 150px;
+}
+
+.small-banner {
+    height: auto;
+
+}
+
+.large-image {
+    height: 400px;
+}
+
+.medium-box {
+    height: 150px;
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.upcoming-meetings {
+    grid-column: span 2;
+}
+
+.recent-recordings {
+    grid-column: span 3;
+}
+
+.small-banner,
+.medium-box,
+.profile-section {
+    grid-column: span 1;
+}
+
+.large-image {
+    grid-column: span 2;
+}
+
+.profile-card {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+.profile-stats,
+.profile-extra {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.profile-stats p,
+.profile-extra p {
+    margin: 3px 0;
+}
+
+.upcoming-meetings-container {
+    height: 370px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #4f4f4f;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meeting-item {
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.meeting-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.meeting-date,
+.meeting-time {
+    font-size: 0.9rem;
+    color: #ccc;
+}

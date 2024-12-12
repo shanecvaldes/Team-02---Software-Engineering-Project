@@ -1,0 +1,45 @@
+.playback {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.playback h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.playback-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.playback video,
+.playback audio {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.playback button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.playback button:hover {
+    background-color: #0056b3;
+}

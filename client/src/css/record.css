@@ -1,0 +1,59 @@
+.container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #262626;
+    border-radius: 10px;
+    bottom: 10px;
+}
+
+.grid-item {
+    text-align: center;
+    color: white;
+}
+
+.name {
+    height: fit-content;
+    font-size: larger;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.picture {
+    padding: 1.5rem;
+}
+
+.display {
+    font-size: 2.5vw;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: #565353;
+    border-radius: 40px;
+    padding: .75rem;
+    margin-bottom: .75rem;
+    color: white;
+}
+
+.controls button {
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+
+.controls button:hover {
+    background-color: #565353;
+    border-color: #565353;
+}
+
+.fadeOut {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: width 2s 2s, height 2s 2s, opacity 2s;
+    color: red;
+}
+
+.need-perms {
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    color: red;
+}
